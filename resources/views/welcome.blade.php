@@ -4,9 +4,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>M Bagas | Resume</title>
-    <meta name="description" content="Bako - Personal Portfolio & Resume HTML Template">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
 
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}" type="text/css" media="all">
     <link rel="stylesheet" href="{{ asset('css/all.min.css') }}" type="text/css" media="all">
@@ -17,8 +15,6 @@
 </head>
 
 <body>
-
-    <!-- preloader -->
     <div id="preloader">
         <div class="outer">
             <div class="spinner">
@@ -35,7 +31,8 @@
                 <span></span>
                 <span></span>
             </button>
-            <a href="index-2.html" class="logo"><img src="images/hero.jpg" style="width: 60px; border-radius: 50%; alt="M Bagas" /></a>
+            <a href="index-2.html" class="logo"><img src="images/hero.jpg"
+                    style="width: 60px; border-radius: 50%; alt="M Bagas" /></a>
             <a href="index-2.html" class="site-title dot ml-2">M Bagas</a>
         </div>
 
@@ -67,19 +64,18 @@
         </header>
 
         <main class="content float-right">
-            <section class="hero background parallax shadow-dark d-flex align-items-center" id="home" data-image-src="images/hero.jpg">
+            <section class="hero background parallax shadow-dark d-flex align-items-center" id="home"
+                data-image-src="images/hero.jpg">
                 <div class="cta mx-auto mt-2">
                     <h1 class="mt-0 mb-4">Saya M Bagas<span class="dot"></span></h1>
-                    <p class="mb-4">Saya adalah mahasiswa di STIMIK Widya Utama, dengan spesialisasi dalam pemrograman web. Bersemangat dalam merancang situs web dan aplikasi modern yang responsif.</p>
+                    <p class="mb-4">Saya adalah mahasiswa di STIMIK Widya Utama, dengan spesialisasi dalam pemrograman
+                        web. Bersemangat dalam merancang situs web dan aplikasi modern yang responsif.</p>
                     <a href="#" class="btn btn-default btn-lg mr-3"><i class="icon-grid"></i>Lihat Portofolio</a>
                     <div class="spacer d-md-none d-lg-none d-sm-none" data-height="10"></div>
                 </div>
                 <div class="overlay"></div>
             </section>
-            
 
-
-            <!-- section about -->
             <section id="about" class="shadow-blue white-bg padding">
                 <h3 class="section-title">Tentang Saya</h3>
                 <div class="spacer" data-height="80"></div>
@@ -109,15 +105,11 @@
                 </div>
             </section>
 
-
-            <!-- section experience -->
             <section id="profile" class="shadow-blue white-bg padding">
                 <h3 class="section-title">Profil</h3>
                 <div class="spacer" data-height="80"></div>
 
-                <!-- timeline riwayat pendidikan -->
                 <div class="timeline">
-                    <!-- Universitas -->
                     <div class="entry">
                         <div class="title">
                             <span>2021 - Sekarang</span>
@@ -129,7 +121,6 @@
                         </div>
                     </div>
 
-                    <!-- SMA -->
                     <div class="entry">
                         <div class="title">
                             <span>2018 - 2021</span>
@@ -141,7 +132,6 @@
                         </div>
                     </div>
 
-                    <!-- SMP -->
                     <div class="entry">
                         <div class="title">
                             <span>2015 - 2018</span>
@@ -165,7 +155,6 @@
                 <div class="row">
 
                     <div class="col-md-4 mb-4 mb-md-0">
-                        <!-- info kontak -->
                         <div class="contact-info mb-5">
                             <i class="icon-phone"></i>
                             <div class="details">
@@ -190,9 +179,7 @@
                     </div>
 
                     <div class="col-md-8">
-                        <!-- Form Kontak -->
                         <form id="contact-form" class="contact-form" method="post" action="">
-
                             <div class="messages"></div>
 
                             <div class="row">
@@ -205,9 +192,7 @@
                                         <div class="help-block with-errors"></div>
                                     </div>
                                 </div>
-
                                 <div class="column col-md-6">
-                                    <!-- Input Email -->
                                     <div class="form-group">
                                         <input type="email" class="form-control" id="InputEmail" name="InputEmail"
                                             placeholder="Alamat Email" required="required"
@@ -217,7 +202,6 @@
                                 </div>
 
                                 <div class="column col-md-12">
-                                    <!-- Input Subjek -->
                                     <div class="form-group">
                                         <input type="text" class="form-control" id="InputSubject"
                                             name="InputSubject" placeholder="Subjek" required="required"
@@ -227,7 +211,6 @@
                                 </div>
 
                                 <div class="column col-md-12">
-                                    <!-- Input Pesan -->
                                     <div class="form-group">
                                         <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" placeholder="Pesan"
                                             required="required" data-error="Pesan wajib diisi."></textarea>
@@ -239,10 +222,9 @@
                             <button type="submit" name="submit" id="submit" value="Submit"
                                 class="btn btn-default">
                                 <i class="icon-paper-plane"></i>Kirim Pesan
-                            </button><!-- Tombol Kirim -->
+                            </button>
 
                         </form>
-                        <!-- Akhir Form Kontak -->
                     </div>
 
                 </div>
@@ -254,10 +236,8 @@
 
     </div>
 
-    <!-- Go to top button -->
     <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <!-- SCRIPTS -->
     <script src="{{ asset('js/jquery-1.12.3.min.js') }}"></script>
     <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
     <script src="{{ asset('js/popper.min.js') }}"></script>
