@@ -184,7 +184,6 @@
 
                             <div class="row">
                                 <div class="column col-md-6">
-                                    <!-- Input Nama -->
                                     <div class="form-group">
                                         <input type="text" class="form-control" name="InputName" id="InputName"
                                             placeholder="Nama Anda" required="required"
@@ -223,8 +222,8 @@
                                 class="btn btn-default">
                                 <i class="icon-paper-plane"></i>Kirim Pesan
                             </button>
-
                         </form>
+
                     </div>
 
                 </div>
@@ -238,7 +237,11 @@
 
     <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
 
-    <script src="{{ asset('js/jquery-1.12.3.min.js') }}"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
     <script src="{{ asset('js/popper.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
@@ -252,6 +255,48 @@
     <script src="{{ asset('js/contact.js') }}"></script>
     <script src="{{ asset('js/validator.js') }}"></script>
     <script src="{{ asset('js/custom.js') }}"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#contact-form').on('submit', function(e) {
+                e.preventDefault();
+                var name = $('#InputName').val();
+                var email = $('#InputEmail').val();
+                var subject = $('#InputSubject').val();
+                var message = $('#InputMessage').val();
+
+                $.ajax({
+                    url: '/send-contact',
+                    method: 'POST',
+                    data: {
+                        name: name,
+                        email: email,
+                        subject: subject,
+                        message: message,
+                        _token: '{{ csrf_token() }}'
+                    },
+                    success: function(response) {
+                        Swal.fire({
+                            icon: 'success',
+                            title: 'Pesan Terkirim!',
+                            text: 'Terima kasih, pesan Anda telah terkirim.',
+                            confirmButtonText: 'OK'
+                        });
+
+                        $('#contact-form')[0].reset();
+                    },
+                    error: function(xhr) {
+                        Swal.fire({
+                            icon: 'error',
+                            title: 'Gagal Mengirim!',
+                            text: 'Ada kesalahan, coba lagi nanti.',
+                            confirmButtonText: 'OK'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 
