@@ -10,7 +10,6 @@ class ContactController extends Controller
 {
     public function sendContact(Request $request)
     {
-        // Validasi input
         $request->validate([
             'name' => 'required',
             'email' => 'required|email',
@@ -19,7 +18,6 @@ class ContactController extends Controller
         ]);
         Contact::create($request->all());
 
-        // Return response sukses
         return response()->json(['message' => 'Pesan terkirim!'], 200);
     }
 }
