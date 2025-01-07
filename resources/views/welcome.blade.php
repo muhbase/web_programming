@@ -31,9 +31,9 @@
                 <span></span>
                 <span></span>
             </button>
-            <a href="index-2.html" class="logo"><img src="images/hero.jpg"
+            <a href="/" class="logo"><img src="images/hero.jpg"
                     style="width: 60px; border-radius: 50%; alt="M Bagas" /></a>
-            <a href="index-2.html" class="site-title dot ml-2">M Bagas</a>
+            <a href="/" class="site-title dot ml-2">M Bagas</a>
         </div>
 
         <header class="left float-left shadow-dark" id="header">
@@ -41,9 +41,9 @@
                 <span aria-hidden="true">&times;</span>
             </button>
             <div class="header-inner d-flex align-items-start flex-column">
-                <a href="index-2.html"><img src="images/hero.jpg" alt="M Bagas"
+                <a href="/"><img src="images/hero.jpg" alt="M Bagas"
                         style="width: 120px; border-radius: 50%;" /></a>
-                <a href="index-2.html" class="site-title dot mt-3">M. Bagas</a>
+                <a href="/" class="site-title dot mt-3">M. Bagas</a>
                 <span class="site-slogan">Mahasiswa</span>
 
                 <nav>
@@ -240,7 +240,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{ asset('js/jquery.easing.min.js') }}"></script>
     <script src="{{ asset('js/popper.min.js') }}"></script>
